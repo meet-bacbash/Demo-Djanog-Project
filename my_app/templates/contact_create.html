@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>
+            Create Contact
+        </title>
+    </head>
+    <body>
+        <form action="/app/contact-create/" method="post">
+            {% csrf_token %}
+            <input name="name"/>
+            <input name="email" type="email"/>
+            <input name="address"/>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>

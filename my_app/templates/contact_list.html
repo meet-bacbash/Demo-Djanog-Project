@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>
+            Contact List
+        </title>
+    </head>
+    <body>
+        <table>
+            {% for contact in object_list%}
+            <tr>
+                <td>{{contact.name}}</td>
+                <td>{{contact.email}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
